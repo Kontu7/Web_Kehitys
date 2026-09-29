@@ -139,9 +139,10 @@ h1 {
             rgba(255, 255, 255, 0.6),
             rgba(255, 255, 255, 0.6)
         ), url("images/merimaisema.jpg");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
     
     
     
@@ -164,7 +165,10 @@ h1 {
 .card-image{
   display: block;
   max-width: 100%;
-  height: auto;
+  min-height: 86%;
+  
+  
+
 
 }
 
