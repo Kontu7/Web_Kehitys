@@ -14,13 +14,16 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 display: flex;
 flex-wrap: nowrap;
 gap: 10px;
+
 }
 
 .card{
     width: 30%;
+    
 }
 .card img{
     width: 100%;
+    
   
 }
 nav{
