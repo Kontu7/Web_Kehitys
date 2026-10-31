@@ -1,0 +1,111 @@
+/*Teemu Vörlin*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    padding: 20px 10px;
+    margin: 5px;
+}
+
+footer{
+    background-color: rgb(146, 145, 145);
+}
+
+
+
+h2{
+    font-size: 1rem;
+}
+
+.container{
+    background-image: linear-gradient(to bottom, greenyellow, green);
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+.kuvia{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+gap: 1.5rem;
+
+
+}
+
+.card{
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid black;
+    border-radius: 12px;
+    flex: 1 1 0;
+    min-width: 0;
+    
+  
+}
+.card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    display: block;
+    border: 2px solid black;
+   
+}
+nav{
+    text-align: right;
+    padding: 20px;
+    
+}
+
+footer{
+    border: 1px solid grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p{
+    font-size: large;
+    
+}
+
+/*linkkien muokkausta*/
+nav a{
+    text-decoration: none;
+    padding: 0.6rem;
+    background-color: rgb(16, 223, 171);
+  
+}
+
+/*Lomakkeet seuraavassa*/
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3px;
+    background-image: linear-gradient(to right, rgb(44, 175, 44), white );
+    min-width: 100%;
+    border: 2px solid black;
+    
+    
+}
+form div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    min-width: 300px;
+    max-width: 1000px;
+
+}
+
+
+
+
+
+
+
