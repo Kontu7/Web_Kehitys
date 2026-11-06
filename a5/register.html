@@ -1,0 +1,101 @@
+<!--Teemu Vörlin-->
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Metsäreitti -- Teemu Vörlin</title>
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <h1>Luontoreitti kannuksessa</h1>
+            <p>
+                Registeröidy saadaksesi ilmoitukset päivityksistä sivulla
+            </p>
+
+            <nav class="linkit">
+
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="register.html"><strong>Register</strong></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="lomake">
+        <form action="https://httpbin.org/post" method="post">
+
+        <div>
+        <label for="name">Nimi:</label>
+        <input type="text" name="name" id="name" required>
+        </div>
+
+        <div>
+        <label for="email">Sähköposti:</label>
+        <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+        <label for="username">Käyttäjänimi: </label>
+        <input type="text" name="username" id="username" required minlength="3">
+        </div>
+        <div>
+
+        <label for="password">Salasana:</label>
+        <input type="password" name="password" id="password" minlength="8">
+        </div>
+
+        <div>
+
+        <label for="käyttäjätyyppi">käyttäjätyyppi: </label>
+        <select name="käyttäjätyyppi" id="käyttäjätyyppi" required>
+            <option value="Vaellus">Vaellus</option>
+            <option value="Luontokuvaus">Luontokuvaus</option>
+            <option value="Retkeily">Retkeily</option>
+        </select>
+        </div>
+
+        <div>
+            <label for="cookies">Hyväksy käyttöehdot</label required>
+            <input type="checkbox" name="cookies" id="cookies">
+        
+
+        </div>
+
+    
+        <div>
+            <input type="submit" name="submit" id="submit">
+
+        </form>
+        </div>
+        
+        
+    </main>
+
+    <footer>
+        <div>
+            <p>Kuvat ottanut: Teemu Vörlin</p>
+            <p>Tekstit kirjoittanut: Teemu Vörlin</p>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
