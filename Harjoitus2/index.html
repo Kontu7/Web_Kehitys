@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leivonta sivusto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <!--Tämä säiliö mahdollistaa logo vasemmalle ja nav oikealle!-->
+        <div class="rajaus header-sisalto">
+            <a href="#" class="logo">Leivonta</a>
+            <nav>
+                <a href="#leivokset">Leivokset</a>
+                <a href="#yhteys">Ota yhteyttä</a>
+            </nav>
+
+
+        </div>
+
+        <main class="rajaus">
+            <!--SECTION, jossa teksti ja kuva gridillö-->
+            <section class="esittely">
+                <img src="images/pulla.jpg" alt="Leivonnainen" width="1280" height="800">
+                <div>
+                    <p>Pieni tauko hyvään leivoksen seurassa</p>
+                    <h1>Piipahada kahville</h1>
+                    <a href="#leivokset">Tutustu leivoksiin</a>
+
+                </div>
+
+
+            </section>
+            <section id="leivokset">
+
+                <p class="ylateksti">löydä oma hetkesi</p>
+                <h2>Kolme tapaa nauttia elämästä</h2>
+                <!--Tästä alkaa gridi, jossa käytetään nimettyjä alueita-->
+
+                <div class="kortit">
+                    <article class="kortti kortti-iso">
+                        <img class="kortti-kuva" src="images/pulla.jpg" alt="pulla" width="1920" height="1200">
+                        <div class="kortti-teksti">
+                            <p class="ylateksti">Hyvää pullaa!</p>
+                            <h3>Rauhallinen aamu</h3>
+                            <a class="korttilinkki" href="#yhteys">Kysy lisää</a>
+                        </div>
+
+                    </article>
+
+                    <article class="kortti kortti-yla">
+                        <img class="kortti-kuva" src="images/pulla.jpg" alt="pulla" width="1280" height="800">
+                        <div class="kortti-teksti">
+                            <p class="ylateksti">Parempaa pullaa!</p>
+                            <h3>Hetki ilman kiirettä</h3>
+                            <a class="korttilinkki" href="#yhteys">Kysy lisää</a>
+                        </div>
+
+                    </article>
+
+                    <article class="kortti kortti-ala">
+                        <img class="kortti-kuva" src="images/pulla.jpg" alt="pulla" width="1280" height="800">
+                        <div class="kortti-teksti">
+                            <p class="ylateksti">Parempaa pullaa!</p>
+                            <h3>Hetki ilman kiirettä</h3>
+                            <a class="korttilinkki" href="#yhteys">Kysy lisää</a>
+                        </div>
+                    </article>
+
+
+
+
+
+                </div>
+
+            </section>
+            <section class="accordion">
+                <h2>Usein kysytyt kysymykset</h2>
+                <details>
+                    <summary>
+                        Pullan tekeminen kotona
+                    </summary>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione facilis</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea exercitationem doloribus non aliquid omnis debitis excepturi </p>
+
+                </details>
+
+            </section>
+
+            <section class="yhteystiedot" id="yhteys">
+                <form action="#">
+                    <label for="nimi">Nimi</label>
+                    <input type="text" name="nimi" id="nimi" required>
+                    <p class="virhe">Kirjoita nimi</p>
+
+                    <button type="submit">Lähetä</button>
+                </form>
+
+
+            </section>
+        </main>
+
+    </header>
+
+</body>
+
+</html>

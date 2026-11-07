@@ -1,0 +1,96 @@
+/*perus jutut*/
+*{
+    box-sizing: border-box;
+    color: var(--fontti);
+}
+
+html{
+    scroll-padding: 24px;
+}
+
+.header-sisalto a{
+    text-decoration: none;
+    color: var(--fontti);
+}
+
+/*Väri muuttujia*/
+:root{
+    --nav: rgb(206, 206, 206);
+    --fontti: rgb(76, 167, 73);
+    --hover: rgb(133, 212, 133);
+    --footer: rgb(95, 94, 94);
+    --nappi: rgb(121, 121, 121);
+    --tausta: rgb(222, 222, 223);
+
+}
+
+.linkit a:hover{
+    background-color: var(--hover);
+}
+
+
+body{
+    background-color: var(--tausta);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fontti);
+    
+    
+}
+
+.header-sisalto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 40px;
+    padding: 20px;
+    align-items: center;
+    
+
+    background-color: var(--nav);
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.logo{
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+}
+
+.rajaus{
+    width: min(1000px, calc(100%-30%));
+    margin: inline auto;
+}
+
+main{
+    flex: 1;
+    padding: 20px;
+}
+
+/*matkainfo nappi*/
+.matkainfo
+{
+    background-color: var(--nappi);
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 11px;
+    text-decoration: none;
+
+}
+
+footer{
+    padding: 0 20px;
+    background-color: var(--footer);
+}
+
+.footer-otsikko{
+    font-size: 1.2rem;
+}
