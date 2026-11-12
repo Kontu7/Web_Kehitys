@@ -16,11 +16,12 @@ html{
 /*Väri muuttujia*/
 :root{
     --nav: rgb(206, 206, 206);
-    --fontti: rgb(76, 167, 73);
+    --fontti: rgb(27, 47, 53);
     --hover: rgb(133, 212, 133);
-    --footer: rgb(95, 94, 94);
+    --footer: rgb(206, 206, 206);
     --nappi: rgb(121, 121, 121);
     --tausta: rgb(222, 222, 223);
+     --kortti: rgb(135, 173, 223);
 
 }
 
@@ -74,6 +75,31 @@ main{
     flex: 1;
     padding: 20px;
 }
+/*Korttien muotoilu*/
+.kortit{
+    padding: 20px;
+    display: flex;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "suuri yla"
+    "suuri ala";
+}
+
+.kortit img{
+    width: 200px;
+    height: 100px;
+}
+
+.kortti-suuri{
+    grid-area: suuri;
+}
+
+.kortti-yla{
+    grid-area: yla;
+    grid-area: ala;
+}
+
 
 /*matkainfo nappi*/
 .matkainfo
@@ -93,4 +119,60 @@ footer{
 
 .footer-otsikko{
     font-size: 1.2rem;
+}
+
+/*matkainfo korrteja*/
+.kortti{
+    background-color: var(--kortti);
+    border: 2px solid black;
+}
+
+caption{
+    font-weight: bold;
+}
+
+.kysymys summary
+{
+   font-weight: bold;
+}
+
+.vertailu th, td{
+    border: 1px solid black;
+    background-color: var(--kortti);
+    
+}
+
+.tietoa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.tietoa div{
+    background-color: var(--kortti);
+    margin: 5px;
+}
+
+
+.form{
+    background-color: var(--kortti);
+    border-radius: 10px;
+}
+
+/*Luodaan gridi labelille ja inputille*/
+.lomake{
+    padding: 5px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    
+}
+
+
+
+@media (max-width: 900px){
+    .tietoa{
+        grid-template-columns: 1fr;
+    }
+
 }

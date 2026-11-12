@@ -20,6 +20,37 @@
     </header>
 
     <main>
+          <form action="#" class="form">
+            <div class="lomake">
+            <label for="email">Sähköposti*</label>
+            <input type="email" id="email" required>
+            </div>
+
+            <div class="lomake">
+                <label for="Sijainti">Matkakohde*</label>
+                <select name="Sijainti" id="Sijainti" required>
+                    <option value="">-Valitse Vaihtoehto-</option >
+                    <option value="Kokkola">Kokkola</option>
+                    <option value="Helsinki">Helsinki</option>
+                    <option value="Oulu">Oulu</option>
+                </select>
+            </div>
+
+            <div class="lomake">
+                <label for="Ajankohta">Päivämäärä*</label>
+                <input type="date" id="Ajankohta" name="Ajankohta" required>
+            </div>
+
+            <div class="lomake">
+                <label for="Matkustajat">Matkustajien määrä*</label>
+                <input type="number" id="Matkustajat" name="Matkustajat" required min="1" max="8">
+            </div>
+
+            <div class="lomake">
+           <button type="submit">Lähetä matkatoive</button>
+           </div>
+          
+        </form>
        
 
     </main>
